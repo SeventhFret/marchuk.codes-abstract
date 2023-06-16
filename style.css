@@ -26,7 +26,7 @@ body {
     align-items: center;
     justify-content: center;
     transform: translateZ(0);
-    position: relative;
+    /* position: relative; */
 }
 
 .header-block-avatar {
@@ -44,19 +44,20 @@ body {
     /* align-items: flex-start; */
     /* justify-content: center; */
     flex-direction: column;
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
 }
 
 .header-block-text p {
     color: rgb(255, 191, 0);
     font-size: 4vw;
-    margin-bottom: -5vh;
+    margin-bottom: -6vh;
 }
 
 .header-block-text h1 {
     color: rgb(255, 191, 0);
     font-size: 6vw;
-    margin-bottom: -5vh;
+    margin-bottom: -6vh;
 }
 
 .header-block-text h2 {
