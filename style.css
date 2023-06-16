@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue";
+}
+
+/* ? DESKTOP HEADER SECTION */
+@media only screen and (min-width: 768px) {
+.header-section {
+    background-image: url("/img/first-block-picture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(0);
+    position: relative;
+}
+
+.header-block-avatar {
+    position: absolute;
+    width: 40vw;
+    border-radius: 50%;
+    opacity: 0;
+    /* margin-left: 5vw; */
+    
+}
+
+.header-block-text {
+    display: flex;
+    color: white;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+    flex-direction: column;
+    opacity: 0;
+}
+
+.header-block-text p {
+    color: rgb(255, 191, 0);
+    font-size: 4vw;
+    margin-bottom: -5vh;
+}
+
+.header-block-text h1 {
+    color: rgb(255, 191, 0);
+    font-size: 6vw;
+    margin-bottom: -5vh;
+}
+
+.header-block-text h2 {
+    color: #0073ff;
+    font-size: 5vw;
+}
+
+
+}
