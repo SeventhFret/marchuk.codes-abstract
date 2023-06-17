@@ -84,7 +84,7 @@ const sceneAbout = new ScrollMagic.Scene({
     .setTween(tweenAbout)
     .addTo(controller);
 
-
+// ? EDUCATION ==============
 var tweenEducationSection = TweenMax.to('#educationSection', 0.7, {css: {opacity: 1}, ease: Power2.easeInOut})
 
 const sceneEducationSection = new ScrollMagic.Scene({
@@ -127,4 +127,49 @@ const sceneEducationDci = new ScrollMagic.Scene({
 })
 
     .setTween(tweenEducationDci)
+    .addTo(controller);
+
+// ? EXPERIENCE ==============
+var tweenExperienceSection = TweenMax.to('#experienceSection', 0.7, {css: {opacity: 1}, ease: Power2.easeInOut})
+
+const sceneExperienceSection = new ScrollMagic.Scene({
+    triggerElement: '.experience-section',
+    triggerHook: 0.9,
+    reverse: true
+})
+
+    .setTween(tweenExperienceSection)
+    .addTo(controller);
+
+var tweenExperience = TweenMax.to('#experienceBlock', 0.7, {css: {opacity: 1, translateX: 0}, ease: Power2.easeInOut})
+
+const sceneExperience = new ScrollMagic.Scene({
+    triggerElement: '.experience-section',
+    triggerHook: 0.3,
+    reverse: true
+})
+
+    .setTween(tweenExperience)
+    .addTo(controller);
+    
+var tweenExperienceCollege = TweenMax.to('#experienceCbo', 0.7, {css: {opacity: 1, translateX: 0}, ease: Power2.easeInOut})
+
+const sceneExperienceColege = new ScrollMagic.Scene({
+    triggerElement: '.experience-dci',
+    triggerHook: 0.9,
+    reverse: true
+})
+
+    .setTween(tweenExperienceCollege)
+    .addTo(controller);
+
+var tweenExperienceDci = TweenMax.to('#experienceDci', 0.7, {css: {opacity: 1, translateX: 0}, ease: Power2.easeInOut})
+
+const sceneExperienceDci = new ScrollMagic.Scene({
+    triggerElement: '.filler-experience',
+    triggerHook: 0.7,
+    reverse: true
+})
+
+    .setTween(tweenExperienceDci)
     .addTo(controller);
