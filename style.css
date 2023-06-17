@@ -368,6 +368,7 @@ body {
 @media only screen and (min-width: 768px) {
     .skills-section {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         box-shadow: 0px 0px 30px 10px black;
@@ -377,10 +378,14 @@ body {
     }
 
     .skills-block {
+        opacity: 0;
+        -webkit-transform: translateY(5vw);
+        transform: translateY(5vw);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        height: 100%;
     }
 
     .skills-group {
@@ -388,16 +393,70 @@ body {
         flex-direction: row;
     }
     
-    .skills-block h1 {
+    .skills-header {
         font-size: 5vw;
         color: #ffa411;
+        border-bottom: 3px solid #ffa411;
     }
 
     .skills-block img {
         opacity: 0;
-        height: 5vw;
+        height: 4vw;
         -webkit-transform: translateY(2vw);
         transform: translateY(2vw);
+    }
+
+    .languages-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 70%;
+        border: 3px solid #ffa411;
+        border-radius: 15px;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        margin-left: 3vw;
+    }
+
+    .languages-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+
+    .language { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-right: 3px solid #ffa411;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        /* margin-top: -6.5vw; */
+        /* margin-bottom: -5vw; */
+    }
+
+    .language p {
+        color: #001f7b;
+        font-size: 3vw;
+    }
+    
+    .stars-sub-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .star-filled {
+        height: 2.5vw;
+    }
+    
+    .star-empty {
+        height: 2.5vw;
     }
 }
 

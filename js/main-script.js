@@ -56,7 +56,7 @@ function restoreBlocks() {
 }
 
 function playAvatarAnimation() {
-    // disableScroll();
+    disableScroll();
     avatarAppear.play();
     avatarAppear.finished.then(function() {
         headerText.style.display = 'flex';
@@ -176,7 +176,16 @@ const sceneExperienceDci = new ScrollMagic.Scene({
 
 
 // ? SKILLS
-var tweenSkills = TweenMax.to('#experienceDci', 0.7, {css: {opacity: 1, translateX: 0}, ease: Power2.easeInOut})
+var tweenSkills = TweenMax.to('#skillsBlock', 0.7, {css: {opacity: 1, translateY: 0}, ease: Power2.easeInOut})
+
+var skillsSectionScene = new ScrollMagic.Scene({
+    triggerElement: '.skills-section',
+    triggerHook: 0.4,
+    reverse: true
+  })
+
+  .setTween(tweenSkills)
+  .addTo(controller);
 
 // ? LOGOS APPEARANCE
 var logos = document.querySelectorAll('.skill-logo');
@@ -185,10 +194,13 @@ var delay = 0;
 logos.forEach(function(logo){
     var skillsScene = new ScrollMagic.Scene({
         triggerElement: '.skills-section',
-        offset: 200,
+        offset: 100,
         reverse: true
+      })
+      .on('leave', function() {
+        delay = 0;
       })
       .setTween(TweenMax.to(logo, 0.5, {css: {opacity: 1, translateY: 0}, delay: delay, ease: Power2.easeInOut}))
       .addTo(controller);
-      delay += 0.09;
+      delay += 0.1;
   });
