@@ -363,6 +363,44 @@ body {
         display: flex;
       }
 }
+
+/* ? DESKTOP SKILLS SECTION */
+@media only screen and (min-width: 768px) {
+    .skills-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 30px 10px black;
+        height: 100vh;
+        background-image: url('img/forth-block-picture.jpeg');
+        background-size: cover;
+    }
+
+    .skills-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .skills-group {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .skills-block h1 {
+        font-size: 5vw;
+        color: #ffa411;
+    }
+
+    .skills-block img {
+        opacity: 0;
+        height: 5vw;
+        -webkit-transform: translateY(2vw);
+        transform: translateY(2vw);
+    }
+}
+
 @keyframes typing-erase {
     0% { width: 0 }
     80% { width: 100% }

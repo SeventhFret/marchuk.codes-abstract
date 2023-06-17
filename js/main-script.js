@@ -173,3 +173,22 @@ const sceneExperienceDci = new ScrollMagic.Scene({
 
     .setTween(tweenExperienceDci)
     .addTo(controller);
+
+
+// ? SKILLS
+var tweenSkills = TweenMax.to('#experienceDci', 0.7, {css: {opacity: 1, translateX: 0}, ease: Power2.easeInOut})
+
+// ? LOGOS APPEARANCE
+var logos = document.querySelectorAll('.skill-logo');
+var delay = 0;
+
+logos.forEach(function(logo){
+    var skillsScene = new ScrollMagic.Scene({
+        triggerElement: '.skills-section',
+        offset: 200,
+        reverse: true
+      })
+      .setTween(TweenMax.to(logo, 0.5, {css: {opacity: 1, translateY: 0}, delay: delay, ease: Power2.easeInOut}))
+      .addTo(controller);
+      delay += 0.09;
+  });

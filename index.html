@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maksym Marchuk</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer>
       window.onbeforeunload = function () {
         window.scrollTo(0, 0);
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <!-- HEADER SECTION -->
     <section class="header-section">
       <div id="headerBlock" class="header-block">
@@ -116,62 +118,87 @@
             </section>
 
 
-            <!-- EXPERIENCE SECTION -->
-            <section class="experience-section">
-                <div id="experienceBlock" class="experience-block">
-                    <h2 class="experience-header">Experience</h2>
-                    <div class="experience-content">
+    <!-- EXPERIENCE SECTION -->
+    <section id="experienceSection" class="experience-section">
+        <div id="experienceBlock" class="experience-block">
+            <h2 class="experience-header">Experience</h2>
+            <div class="experience-content">
+
+                <!-- CBO -->
+                <div id="experienceCbo" class="experience-cbo">
+                <div class="experience-duration">
+                    <h3 class="year">05.2022-08.2022</h3>
+                    <div class="dot"></div>
+                    <div class="vertical-line"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="experience-college-content">
+                    <h2>Computer Technician</h2>
+                    <h3>Schliersee CBO</h3>
+                    <ul>     
+                    <li>Worked with hardware and servers along with experienced colleges</li>
+                    <li>Learned technologies and companies environment</li>
+                    <li>Practiced in solving customer problems</li>
+                    <li>Worked in team</li>
+                    <li>Improved German and English language skills</li>
+                    </ul>
+                </div>
+                <div class="experience-picture-container"></div>
+                <!-- <img
+                    class="experience-picture"
+                    src="./img/computer-icon.svg"
+                    alt="Computer picture"
+                /> -->
+                </div>
+
+                <div class="filler-experience"></div>
+
+                <!-- DCI -->
+                <div id="experienceDci" class="experience-dci">
+                <div class="experience-duration">
+                    <h3 class="year">03.2023-10.2023</h3>
+                    <div class="dot"></div>
+                    <div class="vertical-line"></div>
+                </div>
         
-                      <!-- CBO -->
-                      <div id="experienceCbo" class="experience-cbo">
-                        <div class="experience-duration">
-                          <h3 class="year">05.2022-08.2022</h3>
-                          <div class="dot"></div>
-                          <div class="vertical-line"></div>
-                          <div class="dot"></div>
-                        </div>
-                        <div class="experience-college-content">
-                          <h2>Computer Technician</h2>
-                          <h3>Schliersee CBO</h3>
-                          <ul>     
-                            <li>Worked with hardware and servers along with experienced colleges</li>
-                            <li>Learned technologies and companies environment</li>
-                            <li>Practiced in solving customer problems</li>
-                            <li>Worked in team</li>
-                            <li>Improved German and English language skills</li>
-                          </ul>
-                        </div>
-                        <div class="experience-picture-container"></div>
-                        <!-- <img
-                          class="experience-picture"
-                          src="./img/computer-icon.svg"
-                          alt="Computer picture"
-                        /> -->
-                      </div>
-        
-                      <div class="filler-experience"></div>
-        
-                      <!-- DCI -->
-                      <div id="experienceDci" class="experience-dci">
-                        <div class="experience-duration">
-                          <h3 class="year">03.2023-10.2023</h3>
-                          <div class="dot"></div>
-                          <div class="vertical-line"></div>
-                        </div>
-              
-                        <div class="experience-college-content">
-                          <h2>Tutor</h2>
-                          <h3>Digital Career Institute, Germany, Online</h3>
-                          <ul>
-                            <li>Teaching students</li>
-                            <li>Help in solving their issues</li>
-                            <li>Preparing material</li>
-                            <li>Improving myself</li>
-                          </ul>
-                        </div>
-                      </div>
-            </section>
+                <div class="experience-college-content">
+                    <h2>Tutor</h2>
+                    <h3>Digital Career Institute, Germany, Online</h3>
+                    <ul>
+                    <li>Teaching students</li>
+                    <li>Help in solving their issues</li>
+                    <li>Preparing material</li>
+                    <li>Improving myself</li>
+                    </ul>
+                </div>
+                </div>
+    </section>
             
+    <!-- SKILLS SECTION -->
+    <section class="skills-section">
+        <div class="skills-block">
+            <h1>Skills</h1>
+            <div class="skills-group">
+                <img id="skillLogo" class="skill-logo" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+                <img id="skillLogo" class="skill-logo" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                <img id="skillLogo" class="skill-logo" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
+            </div>
+            <div class="skills-group">
+                <img id="skillLogo" class="skill-logo" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown">
+                <img id="skillLogo" class="skill-logo" src="https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white" alt="Anaconda">
+                <img id="skillLogo" class="skill-logo" src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+            </div>
+            <div class="skills-group">
+                <img id="skillLogo" class="skill-logo" src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+                <img id="skillLogo" class="skill-logo" src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres">
+                <img id="skillLogo" class="skill-logo" src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" alt="Arduino">
+            </div>
+            <div class="skills-group">
+                <img id="skillLogo" class="skill-logo" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+                <img id="skillLogo" class="skill-logo" src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman">
+            </div>
+        </div>
+    </section>
 
   </body>
   <script src="/libs/janpaepke-ScrollMagic-5915165/scrollmagic/minified/ScrollMagic.min.js"></script>
