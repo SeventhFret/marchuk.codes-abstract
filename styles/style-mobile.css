@@ -130,7 +130,7 @@ body {
     /* height: 100vh; */
     /* margin-top: 5vw; */
     opacity: 0;
-    background-image: url("/img/second-block-picture.png");
+    /* background-image: url("/img/second-block-picture.png"); */
   }
 
   .education-block {
@@ -141,7 +141,7 @@ body {
     background-color: rgba(240, 255, 255, 0.315);
     border: 3px solid #ffa411;
     border-radius: 15px;
-    width: 95vw;
+    width: 90vw;
     /* height: 9vh; */
     opacity: 0;
   }
@@ -211,11 +211,15 @@ body {
 
   .education-college-content {
     width: 100%;
-    display: block;
-    margin-left: 2.5vw;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    /* margin-left: 2.5vw; */
+}
 
-  .education-college-content h2 {
+.education-college-content h2 {
     margin-bottom: -3vh;
     font-size: 9vw;
     color: #001f7b;
@@ -223,7 +227,9 @@ body {
 }
 
    .education-college-content h3 {
+    text-align: center;
     margin-bottom: -3vh;
+    width: 90%;
     font-size: 7vw;
     color: rgb(255, 191, 0);
     text-align: center;
@@ -234,10 +240,10 @@ body {
     font-size: 6vw;
     color: rgb(202, 152, 0);
     text-align: center;
-  }
+}
 
-  .education-college-content ul {
-    width: 85vw;
+.education-college-content ul {
+    width: 85%;
     margin-top: 5vh;
   }
 

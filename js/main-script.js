@@ -60,8 +60,6 @@ var avatar = document.getElementById('avatarPic');
 
 
 
-
-
 // ? Disable/Enable Scroll
 function disableScroll() {
     document.documentElement.style.overflow = 'hidden';
