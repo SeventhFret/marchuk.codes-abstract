@@ -631,7 +631,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    height: 100vh;
   }
 
   .contacts-block {
@@ -642,7 +642,7 @@ body {
     border: 3px solid #ffa411;
     border-radius: 19px;
     background-color: rgba(240, 255, 255, 0.315);
-    width: 80vw;
+    width: 90vw;
     margin-top: 10vw;
     margin-bottom: 10vw;
     opacity: 0;
@@ -652,7 +652,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 5vw;
   }
 
@@ -662,17 +662,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    font-size: 2vw;
+    font-size: 9vw;
     margin-top: 2vw;
     background-color: rgba(240, 255, 255, 0.158);
     border-radius: 19px;
     width: 100%;
-    height: 6vw;
-    transition: transform 0.4s;
-  }
-
-  .contacts-sub-group:hover {
-    transform: scale(1.1);
+    height: 8vh;
   }
 
   .contacts-sub-group:first-child {
@@ -687,7 +682,7 @@ body {
   }
 
   .contact-icon {
-    height: 5vw;
+    height: 5vh;
   }
 
   .contacts a:any-link {
@@ -697,15 +692,16 @@ body {
   }
 
   .contacts-header {
-    font-size: 5vw;
+    font-size: 12vw;
     color: #ffa411;
   }
 
   .contacts-map {
     border-radius: 19px;
-    height: 25vw;
-    width: 35vw;
-    margin-left: 5vw;
+    height: 30vh;
+    width: 75vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 
   .footer {
@@ -713,10 +709,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 9vh;
     background-color: black;
     color: rgb(62, 58, 58);
-    font-size: 1vw;
+    font-size: 3vw;
   }
 }
 

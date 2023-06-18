@@ -246,15 +246,28 @@ languages.forEach(function(lang){
     delayLang += 0.3;
 });
 
+
+if (isLargeScreen) {
 var langBlockScene = new ScrollMagic.Scene({
     triggerElement: '.languages-section',
-    triggerHook: 0.7,
+    triggerHook: 0.3,
     reverse: true
 })
 
     .setTween(TweenMax.to('#languagesBlock', 0.5, {css: {opacity: 1, translateY: 0}, ease: Power2.easeInOut}))
     .addTo(controller);
 
+} else {
+    var langBlockScene = new ScrollMagic.Scene({
+        triggerElement: '.languages-section',
+        // triggerHook: 0.4,
+        offset: 300,
+        reverse: true
+    })
+    
+        .setTween(TweenMax.to('#languagesBlock', 0.5, {css: {opacity: 1, translateY: 0}, ease: Power2.easeInOut}))
+        .addTo(controller);
+}
 
 var buttonsScene = new ScrollMagic.Scene({
     triggerElement: '.languages-section',
@@ -262,7 +275,7 @@ var buttonsScene = new ScrollMagic.Scene({
     reverse: true
 })
 
-    .setTween(TweenMax.to('#cvBlock', 1, {css: {opacity: 1, translateY: 0}, ease: Power2.easeInOut}))
+    .setTween(TweenMax.to('#cvBlock', 0.6, {css: {opacity: 1, translateY: 0}, ease: Power2.easeInOut}))
     .addTo(controller);
 
 var projScene = new ScrollMagic.Scene({
@@ -298,7 +311,7 @@ projCards.forEach(function(card){
         offset: 300,
         reverse: true
     })
-    .setTween(TweenMax.to('#projectOne', 0.5, {css: {opacity: 1}, delay: delayCard, ease: Power2.easeInOut}))
+    .setTween(TweenMax.to('#projectOne', 0.5, {css: {opacity: 1}, ease: Power2.easeInOut}))
     .addTo(controller);
 
     var projTwoScene = new ScrollMagic.Scene({
@@ -306,7 +319,7 @@ projCards.forEach(function(card){
         offset: 300,
         reverse: true
     })
-    .setTween(TweenMax.to('#projectTwo', 0.5, {css: {opacity: 1}, delay: delayCard, ease: Power2.easeInOut}))
+    .setTween(TweenMax.to('#projectTwo', 0.5, {css: {opacity: 1}, ease: Power2.easeInOut}))
     .addTo(controller);
 
     var projThreeScene = new ScrollMagic.Scene({
@@ -314,7 +327,7 @@ projCards.forEach(function(card){
         offset: 300,
         reverse: true
     })
-    .setTween(TweenMax.to('#projectThree', 0.5, {css: {opacity: 1}, delay: delayCard, ease: Power2.easeInOut}))
+    .setTween(TweenMax.to('#projectThree', 0.5, {css: {opacity: 1}, ease: Power2.easeInOut}))
     .addTo(controller);
 }
 
