@@ -204,27 +204,102 @@ logos.forEach(function(logo){
       .addTo(controller);
       delay += 0.1;
   });
-
-
-// Block scroll on resizing
-var isResizing = false;
-
-window.addEventListener('resize', function() {
-  if (!isResizing) {
-    isResizing = true;
-    disableScroll();
-  }
+  
+var languages = document.querySelectorAll('.language');
+var delayLang = 0;
+  
+languages.forEach(function(lang){
+    var langsScene = new ScrollMagic.Scene({
+        triggerElement: '.languages-section',
+        offset: 300,
+        reverse: true
+    })
+    .on('leave', function() {
+        delayLang = 0;
+    })
+    .setTween(TweenMax.to(lang, 0.5, {css: {opacity: 1, translateY: 0}, delay: delayLang, ease: Power2.easeInOut}))
+    .addTo(controller);
+    delayLang += 0.3;
 });
 
-window.addEventListener('resize', debounce(enableScroll, 100));
+var langBlockScene = new ScrollMagic.Scene({
+    triggerElement: '.languages-section',
+    triggerHook: 0.7,
+    reverse: true
+})
 
-function debounce(func, delay) {
-    var timeout;
-    return function() {
-      clearTimeout(timeout);
-      timeout = setTimeout(func, delay);
-    };
-}
+    .setTween(TweenMax.to('#languagesBlock', 0.5, {css: {opacity: 1, translateY: 0}, ease: Power2.easeInOut}))
+    .addTo(controller);
 
 
-// ! BUTTON
+var buttonsScene = new ScrollMagic.Scene({
+    triggerElement: '.languages-section',
+    offset: 300,
+    reverse: true
+})
+
+    .setTween(TweenMax.to('#cvBlock', 1, {css: {opacity: 1, translateY: 0}, ease: Power2.easeInOut}))
+    .addTo(controller);
+
+var projScene = new ScrollMagic.Scene({
+    triggerElement: '.projects-section',
+    triggerHook: 0.6,
+    reverse: true
+})
+
+    .setTween(TweenMax.to('#projectsBlock', 0.5, {css: {opacity: 1, translateY: 0}, ease: Power2.easeInOut}))
+    .addTo(controller);
+    
+
+var projCards = document.querySelectorAll('.project-card');
+var delayCard = 0;
+    
+projCards.forEach(function(card){
+    var cardsScene = new ScrollMagic.Scene({
+        triggerElement: '.projects-section',
+        offset: 300,
+        reverse: true
+    })
+    .on('leave', function() {
+        delayCard = 0;
+    })
+    .setTween(TweenMax.to(card, 0.5, {css: {opacity: 1}, delay: delayCard, ease: Power2.easeInOut}))
+    .addTo(controller);
+    delayCard += 0.3;
+});
+
+
+var contactsScene = new ScrollMagic.Scene({
+    triggerElement: '.contacts-section',
+    triggerHook: 0.6,
+    reverse: true
+})
+
+    .setTween(TweenMax.to('#contactsBlock', 0.5, {css: {opacity: 1, translateY: 0}, ease: Power2.easeInOut}))
+    .addTo(controller);
+
+
+var contactGroups = document.querySelectorAll('.contacts-sub-group');
+var delayCont = 0;
+
+contactGroups.forEach(function(group){
+    var groupsScene = new ScrollMagic.Scene({
+        triggerElement: '.contacts-section',
+        offset: 300,
+        reverse: true
+    })
+        .on('leave', function() {
+            delayCont = 0;
+        })
+        .setTween(TweenMax.to(group, 0.5, {css: {opacity: 1}, delay: delayCont, ease: Power2.easeInOut}))
+        .addTo(controller);
+    delayCont += 0.3;
+});
+
+var mapScene = new ScrollMagic.Scene({
+    triggerElement: '.contacts-section',
+    offset: 300,
+    reverse: true
+})
+    .setTween(TweenMax.to('#contactMap', 0.5, {css: {opacity: 1, translateY: 0}, ease: Power2.easeInOut}))
+    .addTo(controller);

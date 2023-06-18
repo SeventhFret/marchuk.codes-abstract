@@ -11,10 +11,20 @@
       };
     </script>
     <link
+      rel="stylesheet"
+      href="/styles/style.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/style-mobile.css"
+      media="screen and (max-width: 767px)"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
     <!-- HEADER SECTION -->
@@ -144,12 +154,6 @@
                 <li>Improved German and English language skills</li>
               </ul>
             </div>
-            <div class="experience-picture-container"></div>
-            <!-- <img
-            class="experience-picture"
-            src="./img/computer-icon.svg"
-            alt="Computer picture"
-        /> -->
           </div>
 
           <div class="filler-experience"></div>
@@ -351,7 +355,7 @@
         </div>
 
         <!-- DOWNLOAD CV -->
-        <div class="cv-block">
+        <div id="cvBlock" class="cv-block">
           <a class="cv-button" href="./cv/cv-marchuk-english.pdf" download>
             <img
               class="download-icon"
@@ -386,15 +390,24 @@
               alt="AI Projecr picture"
             />
             <p class="project-description">
-              This application was developed in team and include usage of three artificial intelligences -
-              one is the Elevenlabs Text-To-Speech API, the second is ChatGPT
-              API and the third one is an object recognition model from
-              Tensorflow which used locally. This app allow user to
-              speak with ChatGPT by his voice, and show certain object to
-              chatgpt and get respond played as a robotic voice.
+              This application was developed in team and include usage of three
+              artificial intelligences - one is the Elevenlabs Text-To-Speech
+              API, the second is ChatGPT API and the third one is an object
+              recognition model from Tensorflow which used locally. This app
+              allow user to speak with ChatGPT by his voice, and show certain
+              object to chatgpt and get respond played as a robotic voice.
             </p>
-            <a class="github-link" href="https://github.com/DCI-E05/AI-Project" target="_blank" rel="noopener noreferrer">
-              <img class="github-icon" src="/img/github-icon.svg" alt="Github Icon" />
+            <a
+              class="github-link"
+              href="https://github.com/DCI-E05/AI-Project"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="github-icon"
+                src="/img/github-icon.svg"
+                alt="Github Icon"
+              />
             </a>
           </div>
 
@@ -412,8 +425,17 @@
               project can recognize few gestures and commit actions according to
               them. For now, project has only four main gestures.
             </p>
-            <a class="github-link" href="https://github.com/SeventhFret/hand-gestures" target="_blank" rel="noopener noreferrer">
-              <img class="github-icon" src="/img/github-icon.svg" alt="Github Icon" />
+            <a
+              class="github-link"
+              href="https://github.com/SeventhFret/hand-gestures"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="github-icon"
+                src="/img/github-icon.svg"
+                alt="Github Icon"
+              />
             </a>
           </div>
 
@@ -428,13 +450,87 @@
               processes) and Percantage of memory load. It has a live graph,
               which draw percentage of memory usage and updates each second.
             </p>
-            <a class="github-link" href="https://github.com/SeventhFret/MemoryUsage" target="_blank" rel="noopener noreferrer">
-              <img class="github-icon" src="/img/github-icon.svg" alt="Github Icon" />
+            <a
+              class="github-link"
+              href="https://github.com/SeventhFret/MemoryUsage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="github-icon"
+                src="/img/github-icon.svg"
+                alt="Github Icon"
+              />
             </a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- CONTACTS SECTION -->
+    <section id="contactsSection" class="contacts-section">
+      <div id="contactsBlock" class="contacts-block">
+        <h1 class="contacts-header">Contacts</h1>
+        <div class="contacts-content">
+          <div class="contacts">
+            <!-- MAIL -->
+            <div class="contacts-sub-group">
+              <img
+                class="contact-icon"
+                src="/img/mail-icon.svg"
+                alt="Mail icon"
+              />
+              <a class="mail-contact" href="mailto:maxxik007@gmail.com"
+                >maxxik007@gmail.com</a
+              >
+            </div>
+            <!-- GITHUB -->
+            <div class="contacts-sub-group">
+              <img
+                class="contact-icon"
+                src="/img/github-blue-icon.svg"
+                alt="Mail icon"
+              />
+              <a
+                href="https://github.com/SeventhFret"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SeventhFret</a
+              >
+            </div>
+
+            <!-- INSTAGRAM -->
+            <div class="contacts-sub-group">
+              <img
+                class="contact-icon"
+                src="/img/instagram-icon.svg"
+                alt="Mail icon"
+              />
+              <a
+                href="https://www.instagram.com/nay.sayer27/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >nay.sayer27</a
+              >
+            </div>
+          </div>
+          <iframe
+            id="contactMap"
+            class="contacts-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42893.09450741202!2d11.529840686927317!3d47.784969150524525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d94490fd26e55%3A0x5f031a0b2eb1fdc0!2s83646%20Bad%20T%C3%B6lz!5e0!3m2!1sen!2sde!4v1687107376272!5m2!1sen!2sde"
+            style="border: 0; opacity: 0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <h2>© Maksym Marchuk 2023</h2>
+    </footer>
   </body>
   <script src="/libs/janpaepke-ScrollMagic-5915165/scrollmagic/minified/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
