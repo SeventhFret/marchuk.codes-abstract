@@ -56,7 +56,7 @@ function restoreBlocks() {
 }
 
 function playAvatarAnimation() {
-    disableScroll();
+    // disableScroll();
     avatarAppear.play();
     avatarAppear.finished.then(function() {
         headerText.style.display = 'flex';
@@ -204,3 +204,27 @@ logos.forEach(function(logo){
       .addTo(controller);
       delay += 0.1;
   });
+
+
+// Block scroll on resizing
+var isResizing = false;
+
+window.addEventListener('resize', function() {
+  if (!isResizing) {
+    isResizing = true;
+    disableScroll();
+  }
+});
+
+window.addEventListener('resize', debounce(enableScroll, 100));
+
+function debounce(func, delay) {
+    var timeout;
+    return function() {
+      clearTimeout(timeout);
+      timeout = setTimeout(func, delay);
+    };
+}
+
+
+// ! BUTTON
