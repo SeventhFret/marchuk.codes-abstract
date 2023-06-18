@@ -2,9 +2,55 @@ var isLargeScreen = window.matchMedia("(min-width: 768px)").matches;
 
 if (isLargeScreen) {
     console.log('you are on desktop');
+    var avatarAppear = anime({
+        autoplay: false,
+        targets: '.header-block-avatar',
+        duration: 2000,
+        easing: 'easeInOutQuad',
+        opacity: 1
+    })
+    
+    var avatarToRightAnimation = anime({
+        autoplay: false,
+        targets: '.header-block-avatar',
+        duration: 2500,
+        translateX: [0, '15vw'],
+        marginLeft: [0, '10vw'],
+    })
+    
+    var headersToLeftAnimation = anime({
+        autoplay: false,
+        targets: '.header-block-text',
+        duration: 2500,
+        translateX: [0, '-15vw'],
+        marginRight: [0, '10vw']
+    })
 }
 else {
     console.log('You are on mobile');
+    var avatarAppear = anime({
+        autoplay: false,
+        targets: '.header-block-avatar',
+        duration: 2000,
+        easing: 'easeInOutQuad',
+        opacity: 1
+    })
+    
+    var avatarToRightAnimation = anime({
+        autoplay: false,
+        targets: '.header-block-avatar',
+        duration: 2500,
+        translateY: [0, '-25vw'],
+        marginBottom: [0, '-15vw'],
+    })
+    
+    var headersToLeftAnimation = anime({
+        autoplay: false,
+        targets: '.header-block-text',
+        duration: 2500,
+        translateY: [0, '25vw'],
+        marginTop: [0, '20vw']
+    })
 }
 
 
@@ -12,29 +58,7 @@ var headerBlock = document.getElementById('headerBlock');
 var headerText = document.getElementById('headerText');
 var avatar = document.getElementById('avatarPic');
 
-var avatarAppear = anime({
-    autoplay: false,
-    targets: '.header-block-avatar',
-    duration: 2000,
-    easing: 'easeInOutQuad',
-    opacity: 1
-})
 
-var avatarToRightAnimation = anime({
-    autoplay: false,
-    targets: '.header-block-avatar',
-    duration: 2500,
-    translateX: [0, '15vw'],
-    marginLeft: [0, '10vw'],
-})
-
-var headersToLeftAnimation = anime({
-    autoplay: false,
-    targets: '.header-block-text',
-    duration: 2500,
-    translateX: [0, '-15vw'],
-    marginRight: [0, '10vw']
-})
 
 
 
@@ -55,7 +79,7 @@ function restoreBlocks() {
     avatar.style.display = 'static';
 }
 
-function playAvatarAnimation() {
+function playDesktopAvatarAnimation() {
     // disableScroll();
     avatarAppear.play();
     avatarAppear.finished.then(function() {
@@ -69,7 +93,7 @@ function playAvatarAnimation() {
     })
 }
 
-playAvatarAnimation();
+playDesktopAvatarAnimation();
 
 // Scroll Animation
 const controller = new ScrollMagic.Controller();

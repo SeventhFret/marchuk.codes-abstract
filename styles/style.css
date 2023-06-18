@@ -184,6 +184,10 @@ body {
     font-size: 2.5vw;
   }
 
+  .year-mobile {
+    display: none;
+  }
+
   .education-content {
     /* background-color: red; */
     display: flex;
@@ -380,6 +384,10 @@ body {
     height: 100%;
   }
 
+  .skills-block-mobile {
+    display: none;
+  }
+
   .skills-group-first {
     display: flex;
     justify-content: center;
@@ -464,6 +472,12 @@ body {
   .language-header {
     color: #001f7b;
     font-size: 4vw;
+  }
+
+  .languages-header {
+    font-size: 5vw;
+    color: #ffa411;
+    border-bottom: 3px solid #ffa411;
   }
 
   .stars-sub-group {
