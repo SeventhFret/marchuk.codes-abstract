@@ -36,7 +36,7 @@ body {
 
   .header-block-avatar {
     position: absolute;
-    width: 70vw;
+    width: 80vw;
     border-radius: 50%;
     opacity: 0;
   }
@@ -113,7 +113,7 @@ body {
   }
 
   .about-block-content {
-    font-size: 7vw;
+    font-size: 8vw;
     text-align: center;
     color: #001f7b;
   }
@@ -566,14 +566,14 @@ body {
 
   .projects-header {
     color: #ffa411;
-    font-size: 4vw;
+    font-size: 9vw;
   }
 
   .projects-content {
     display: flex;
     justify-items: center;
     align-items: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     width: 90vw;
   }
 
@@ -585,45 +585,38 @@ body {
     flex-direction: column;
     border: 3px solid #ffa411;
     border-radius: 19px;
-    width: 40vw;
-    margin-left: 5vw;
+    /* height: 20vh; */
     transition: transform 1s;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-  }
-
-  .project-card:hover {
-    transform: scale(1.05);
-  }
-
-  .project-card:first-child {
-    margin-left: 0;
+    margin-bottom: 5vh;
   }
 
   .project-title {
     text-align: center;
     color: #ffa411;
-    font-size: 3vw;
+    font-size: 7vw;
   }
 
   .project-image {
     border: 3px solid #8d98d7;
     border-radius: 19px;
     object-fit: cover;
-    height: 20vw;
-    width: 20vw;
+    height: 70vw;
+    width: 70vw;
   }
 
   .project-description {
     color: #8d98d7;
-    font-size: 1.5vw;
+    word-wrap: break-word;
+    font-size: 5vw;
     text-align: center;
     font-style: italic;
-    width: 95%;
+    width: 80%;
   }
 
   .github-icon {
-    height: 5vw;
+    height: 15vw;
     margin-bottom: 3vw;
   }
 

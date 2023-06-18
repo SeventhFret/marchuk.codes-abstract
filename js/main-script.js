@@ -41,15 +41,15 @@ else {
         targets: '.header-block-avatar',
         duration: 2500,
         translateY: [0, '-25vw'],
-        marginBottom: [0, '-15vw'],
+        marginBottom: [0, '-20vw'],
     })
     
     var headersToLeftAnimation = anime({
         autoplay: false,
         targets: '.header-block-text',
         duration: 2500,
-        translateY: [0, '25vw'],
-        marginTop: [0, '20vw']
+        translateY: [0, '30vw'],
+        marginTop: [0, '25vw']
     })
 }
 
@@ -275,6 +275,7 @@ var projScene = new ScrollMagic.Scene({
     .addTo(controller);
     
 
+if (isLargeScreen) {
 var projCards = document.querySelectorAll('.project-card');
 var delayCard = 0;
     
@@ -291,6 +292,31 @@ projCards.forEach(function(card){
     .addTo(controller);
     delayCard += 0.3;
 });
+} else {
+    var projOneScene = new ScrollMagic.Scene({
+        triggerElement: '.projects-section',
+        offset: 300,
+        reverse: true
+    })
+    .setTween(TweenMax.to('#projectOne', 0.5, {css: {opacity: 1}, delay: delayCard, ease: Power2.easeInOut}))
+    .addTo(controller);
+
+    var projTwoScene = new ScrollMagic.Scene({
+        triggerElement: '.filler-mobile1',
+        offset: 300,
+        reverse: true
+    })
+    .setTween(TweenMax.to('#projectTwo', 0.5, {css: {opacity: 1}, delay: delayCard, ease: Power2.easeInOut}))
+    .addTo(controller);
+
+    var projThreeScene = new ScrollMagic.Scene({
+        triggerElement: '.filler-mobile2',
+        offset: 300,
+        reverse: true
+    })
+    .setTween(TweenMax.to('#projectThree', 0.5, {css: {opacity: 1}, delay: delayCard, ease: Power2.easeInOut}))
+    .addTo(controller);
+}
 
 
 var contactsScene = new ScrollMagic.Scene({
