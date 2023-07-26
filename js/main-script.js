@@ -1,7 +1,6 @@
 var isLargeScreen = window.matchMedia("(min-width: 768px)").matches;
 
 if (isLargeScreen) {
-    console.log('you are on desktop');
     var avatarAppear = anime({
         autoplay: false,
         targets: '.header-block-avatar',
@@ -27,7 +26,6 @@ if (isLargeScreen) {
     })
 }
 else {
-    console.log('You are on mobile');
     var avatarAppear = anime({
         autoplay: false,
         targets: '.header-block-avatar',
@@ -129,7 +127,7 @@ const sceneEducation = new ScrollMagic.Scene({
     .setTween(tweenEducation)
     .addTo(controller);
     
-var tweenEducationCollege = TweenMax.to('#educationCollege', 0.7, {css: {opacity: 1, translateX: 0}, ease: Power2.easeInOut})
+var tweenEducationCollege = TweenMax.to('#educationCollege', 0.7, {css: {opacity: 1}, ease: Power2.easeInOut})
 
 const sceneEducationColege = new ScrollMagic.Scene({
     triggerElement: '.education-dci',
@@ -140,7 +138,7 @@ const sceneEducationColege = new ScrollMagic.Scene({
     .setTween(tweenEducationCollege)
     .addTo(controller);
 
-var tweenEducationDci = TweenMax.to('#educationDci', 0.7, {css: {opacity: 1, translateX: 0}, ease: Power2.easeInOut})
+var tweenEducationDci = TweenMax.to('#educationDci', 0.7, {css: {opacity: 1}, ease: Power2.easeInOut})
 
 const sceneEducationDci = new ScrollMagic.Scene({
     triggerElement: '.filler',
@@ -163,7 +161,7 @@ const sceneExperienceSection = new ScrollMagic.Scene({
     .setTween(tweenExperienceSection)
     .addTo(controller);
 
-var tweenExperience = TweenMax.to('#experienceBlock', 0.7, {css: {opacity: 1, translateX: 0}, ease: Power2.easeInOut})
+var tweenExperience = TweenMax.to('#experienceBlock', 0.7, {css: {opacity: 1}, ease: Power2.easeInOut})
 
 const sceneExperience = new ScrollMagic.Scene({
     triggerElement: '.experience-section',
@@ -174,7 +172,7 @@ const sceneExperience = new ScrollMagic.Scene({
     .setTween(tweenExperience)
     .addTo(controller);
     
-var tweenExperienceCollege = TweenMax.to('#experienceCbo', 0.7, {css: {opacity: 1, translateX: 0}, ease: Power2.easeInOut})
+var tweenExperienceCollege = TweenMax.to('#experienceCbo', 0.7, {css: {opacity: 1}, ease: Power2.easeInOut})
 
 const sceneExperienceColege = new ScrollMagic.Scene({
     triggerElement: '.experience-dci',
@@ -185,7 +183,7 @@ const sceneExperienceColege = new ScrollMagic.Scene({
     .setTween(tweenExperienceCollege)
     .addTo(controller);
 
-var tweenExperienceDci = TweenMax.to('#experienceDci', 0.7, {css: {opacity: 1, translateX: 0}, ease: Power2.easeInOut})
+var tweenExperienceDci = TweenMax.to('#experienceDci', 0.7, {css: {opacity: 1}, ease: Power2.easeInOut})
 
 const sceneExperienceDci = new ScrollMagic.Scene({
     triggerElement: '.filler-experience',

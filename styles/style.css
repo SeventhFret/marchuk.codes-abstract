@@ -84,7 +84,8 @@ body {
 /* ? DESKTOP ABOUT SECTION */
 @media only screen and (min-width: 768px) {
   .about-section {
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,12 +99,11 @@ body {
     border: 3px solid #ffa411;
     border-radius: 15px;
     width: 80vw;
-    height: 25vw;
+    height: 90%;
     padding: 2vw;
     opacity: 0;
     -webkit-transform: rotateZ(15deg);
     transform: rotateZ(15deg);
-    /* -webkit-backdrop-filter: blur(5px); */
   }
 
   .about-block-header {
@@ -126,7 +126,6 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 30px 10px black;
-    /* margin-top: 5vw; */
     opacity: 0;
     background-image: url("/img/second-block-picture.png");
   }
@@ -152,21 +151,14 @@ body {
   .education-college {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: row;
-    transform: translateX(-15vw);
-    -webkit-transform: translateX(-15vw);
     opacity: 0;
   }
 
   .education-dci {
     display: flex;
-    /* background-color: red; */
     align-items: center;
-    /* justify-content: center; */
     flex-direction: row;
-    transform: translateX(15vw);
-    -webkit-transform: translateX(15vw);
     opacity: 0;
     margin-bottom: 2vw;
   }
@@ -260,8 +252,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 10vw 0;
-    transform: translateX(-15vw);
-    -webkit-transform: translateX(-15vw);
     background-color: rgba(240, 255, 255, 0.315);
     border: 3px solid #ffa411;
     border-radius: 15px;
@@ -278,8 +268,6 @@ body {
   .experience-cbo {
     display: flex;
     align-items: center;
-    transform: translateX(-15vw);
-    -webkit-transform: translateX(-15vw);
     flex-direction: row;
     opacity: 0;
   }
@@ -288,8 +276,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
-    transform: translateX(15vw);
-    -webkit-transform: translateX(15vw);
     opacity: 0;
     margin-bottom: 2vw;
   }
@@ -584,6 +570,7 @@ body {
     flex-direction: column;
     border: 3px solid #ffa411;
     border-radius: 19px;
+    height: 95%;
     width: 40vw;
     margin-left: 5vw;
     transition: transform 1s;
