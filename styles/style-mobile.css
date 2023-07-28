@@ -319,6 +319,16 @@ body {
     opacity: 0;
     margin-bottom: 2vw;
   }
+  
+  .experience-pychallenger {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* transform: translateX(15vw);
+    -webkit-transform: translateX(15vw); */
+    opacity: 0;
+    margin-bottom: 2vw;
+  }
 
   .experience-duration {
     display: none;

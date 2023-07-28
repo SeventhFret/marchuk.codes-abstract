@@ -102,8 +102,6 @@ body {
     height: 90%;
     padding: 2vw;
     opacity: 0;
-    -webkit-transform: rotateZ(15deg);
-    transform: rotateZ(15deg);
   }
 
   .about-block-header {
@@ -273,6 +271,14 @@ body {
   }
 
   .experience-dci {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    opacity: 0;
+    margin-bottom: 2vw;
+  }
+  
+  .experience-pychallenger {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -559,6 +565,7 @@ body {
     justify-items: center;
     align-items: flex-start;
     flex-direction: row;
+    height: 60vw;
     width: 90vw;
   }
 
@@ -570,7 +577,7 @@ body {
     flex-direction: column;
     border: 3px solid #ffa411;
     border-radius: 19px;
-    height: 95%;
+    min-height: 100%;
     width: 40vw;
     margin-left: 5vw;
     transition: transform 1s;

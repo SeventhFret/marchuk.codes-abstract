@@ -186,14 +186,24 @@ const sceneExperienceColege = new ScrollMagic.Scene({
 var tweenExperienceDci = TweenMax.to('#experienceDci', 0.7, {css: {opacity: 1}, ease: Power2.easeInOut})
 
 const sceneExperienceDci = new ScrollMagic.Scene({
-    triggerElement: '.filler-experience',
+    triggerElement: '.experience-pychallenger',
     triggerHook: 0.7,
     reverse: true
 })
 
     .setTween(tweenExperienceDci)
     .addTo(controller);
+    
+var tweenExperiencePyChallenger = TweenMax.to('#experiencePyChallenger', 0.7, {css: {opacity: 1}, ease: Power2.easeInOut})
 
+const sceneExperiencePyChallenger = new ScrollMagic.Scene({
+    triggerElement: '.filler-experience',
+    triggerHook: 0.4,
+    reverse: true
+})
+
+    .setTween(tweenExperiencePyChallenger)
+    .addTo(controller);
 
 // ? SKILLS
 var tweenSkills = TweenMax.to('#skillsBlock', 0.7, {css: {opacity: 1, translateY: 0}, ease: Power2.easeInOut})
