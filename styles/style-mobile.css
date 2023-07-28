@@ -102,8 +102,6 @@ body {
     margin-top: 5vh;
     margin-bottom: 5vh;
     opacity: 0;
-    -webkit-transform: rotateZ(15deg);
-    transform: rotateZ(15deg);
     /* -webkit-backdrop-filter: blur(5px); */
   }
 

@@ -94,7 +94,7 @@ playDesktopAvatarAnimation();
 // Scroll Animation
 const controller = new ScrollMagic.Controller();
 
-var tweenAbout = TweenMax.to("#aboutBlock", 0.7, {css: {opacity: 1, rotationZ: 0}, ease: Power2.easeInOut});
+var tweenAbout = TweenMax.to("#aboutBlock", 0.7, {css: {opacity: 1}, ease: Power2.easeInOut});
 
 const sceneAbout = new ScrollMagic.Scene({
     triggerElement: '.about-section',
