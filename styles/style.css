@@ -571,7 +571,7 @@ body {
 
   .project-card {
     opacity: 0;
-    display: flex; 
+    display: flex;
     justify-items: center;
     align-items: center;
     flex-direction: column;
@@ -604,7 +604,8 @@ body {
     border-radius: 19px;
     object-fit: cover;
     height: 20vw;
-    width: 20vw
+    width: 20vw;
+    color: #ffae00
   }
 
   .project-description {
